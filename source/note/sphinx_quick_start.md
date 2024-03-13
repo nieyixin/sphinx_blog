@@ -97,3 +97,40 @@ Contents:
 创建source/content1.md、source/menu/content2.md，编辑并保存。由于打开了热部署，保存时，页面就会实时刷新
 
 ![示例页面](asserts/img/demo_page.png "Demo Page")
+
+### 文档托管
+
+要将文档托管到网页上，首先需要为sphinx项目创建github仓库，具体步骤省略
+
+然后在[Read the Docs](https://readthedocs.org/)网站上注册，绑定github账号后，将该项目导入即可。
+
+#### 添加.readthedocs.yaml
+.readthedocs.yaml配置文件用于托管时的配置，在Read the Docs网站上有样例。我们需要填入的内容如下所示：
+```
+sphinx:
+  configuration: source/conf.py
+
+
+python:
+   install:
+   - requirements: requirements.txt
+```
+分别表示sphinx项目的conf.py路径和requirements路径
+
+#### 添加requirements.txt
+
+我们在项目根目录新建requirements.txt，并填入前文提到的python库：
+
+```
+sphinx-rtd_theme==2.0.0
+recommonmark==0.7.1
+sphinx_markdown_tables==0.0.17
+```
+
+最后我们的博客网站就托管成功了：
+
+![网页托管](asserts/img/website_hosting.png "Web Hosting")
+
+### 参考博客
+
+[Sphinx + Read the Docs从懵逼到入门](https://zhuanlan.zhihu.com/p/264647009)
