@@ -6,3 +6,4 @@
 
    sphinx_quick_start 
    flock_note
+   unmask_compile_warning
