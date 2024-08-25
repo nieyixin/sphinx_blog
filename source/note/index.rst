@@ -8,3 +8,4 @@
    flock_note
    unmask_compile_warning
    oauth2
+   subprocess
