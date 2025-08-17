@@ -11,7 +11,7 @@ pip3 install sphinx
 
 ```
 pip3 install sphinx-autobuild # 热部署，改动能够实时更新在页面上
-pip3 install sphinx_red_theme # 主题
+pip3 install sphinx_rtd_theme # 主题
 pip3 install recommonmark # 插件，支持markdown
 pip3 install sphinx_markdown_tables
 ```
