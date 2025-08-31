@@ -9,3 +9,4 @@
    unmask_compile_warning
    oauth2
    subprocess
+   react_code_note
